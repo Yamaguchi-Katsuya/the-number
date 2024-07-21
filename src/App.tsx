@@ -25,7 +25,7 @@ function App() {
           <div className='flex flex-col gap-8 md:gap-16 my-8 md:my-16'>
             <Header />
 
-            <main className="main flex flex-col items-center justify-center gap-y-8 px-4 w-9/10 md:w-3/4 mt-8 md:mt-16 my-auto md:mx-auto">
+            <main className="main flex flex-col items-center justify-center gap-y-8 px-4 w-9/10 md:w-3/4 my-auto md:mx-auto">
               <PrimeNumber />
 
               <PrimeFactorization />
