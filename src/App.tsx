@@ -21,7 +21,7 @@ function App() {
             content="数字, 素数, 素因数分解, 完全数, 最大公約数"
           />
         </Helmet>
-        <div className='bg-number-pattern bg-cover bg-repeat-y md:bg-inherit md:bg-repeat-x absolute top-0 w-full'>
+        <div className='bg-sp_bg md:bg-pc_bg bg-cover bg-repeat-y md:bg-inherit md:bg-repeat-x absolute top-0 w-full'>
           <div className='flex flex-col gap-8 md:gap-16 my-8 md:my-16'>
             <Header />
 

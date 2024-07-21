@@ -18,7 +18,8 @@ export default {
         montSerrat: ['Montserrat', 'sans-serif'],
       },
       backgroundImage: (theme) => ({
-        'number-pattern': "url('/src/assets/images/sp_bg.jpg')",
+        sp_bg: "url('/src/assets/images/sp_bg.jpg')",
+        pc_bg: "url('/src/assets/images/pc_bg.jpg')",
       }),
     },
   },
