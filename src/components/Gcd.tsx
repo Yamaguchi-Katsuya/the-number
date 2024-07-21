@@ -9,10 +9,7 @@ export default function Gcd(): JSX.Element {
   const [result, setResult] = useState('');
   const [error, setError] = useState('');
 
-  const fields: Field[] = [
-    { name: 'gcd1' },
-    { name: 'gcd2' },
-  ];
+  const fields: Field[] = [{ name: 'gcd1' }, { name: 'gcd2' }];
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -32,13 +29,13 @@ export default function Gcd(): JSX.Element {
   return (
     <>
       <NumberBox title="最大公約数" result={result} error={error}>
-
-        <NumberDescription text="2つの数値の最大公約数を求めます" keyword="最大公約数" />
+        <NumberDescription
+          text="2つの数値の最大公約数を求めます"
+          keyword="最大公約数"
+        />
 
         <NumberForm handleSubmit={handleSubmit} fields={fields} />
-
       </NumberBox>
-
     </>
   );
 }

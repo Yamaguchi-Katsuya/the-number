@@ -9,9 +9,7 @@ export default function PerfectNumber(): JSX.Element {
   const [result, setResult] = useState('');
   const [error, setError] = useState('');
 
-  const fields: Field[] = [
-    { name: 'perfect-number' },
-  ];
+  const fields: Field[] = [{ name: 'perfect-number' }];
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -30,11 +28,12 @@ export default function PerfectNumber(): JSX.Element {
   return (
     <>
       <NumberBox title="完全数" result={result} error={error}>
-
-        <NumberDescription text="数値が完全数かどうか判定します" keyword="完全数" />
+        <NumberDescription
+          text="数値が完全数かどうか判定します"
+          keyword="完全数"
+        />
 
         <NumberForm handleSubmit={handleSubmit} fields={fields} />
-
       </NumberBox>
     </>
   );

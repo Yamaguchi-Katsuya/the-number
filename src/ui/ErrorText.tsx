@@ -7,5 +7,5 @@ export default function ErrorText({ error }: { error: string }): JSX.Element {
     <>
       <p className="text-red">{error}</p>
     </>
-  )
+  );
 }

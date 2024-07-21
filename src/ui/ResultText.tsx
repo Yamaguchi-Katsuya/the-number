@@ -1,4 +1,8 @@
-export default function ResultText({ result }: { result: string }): JSX.Element {
+export default function ResultText({
+  result,
+}: {
+  result: string;
+}): JSX.Element {
   if (!result) {
     return <></>;
   }
@@ -7,5 +11,5 @@ export default function ResultText({ result }: { result: string }): JSX.Element 
     <>
       <p>{result}</p>
     </>
-  )
+  );
 }

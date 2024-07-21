@@ -9,9 +9,7 @@ export default function PrimeNumber(): JSX.Element {
   const [result, setResult] = useState('');
   const [error, setError] = useState('');
 
-  const fields: Field[] = [
-    { name: 'prime-number' },
-  ];
+  const fields: Field[] = [{ name: 'prime-number' }];
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -32,11 +30,9 @@ export default function PrimeNumber(): JSX.Element {
   return (
     <>
       <NumberBox title="素数" result={result} error={error}>
-
         <NumberDescription text="数値が素数かどうか判定します" keyword="素数" />
 
         <NumberForm handleSubmit={handleSubmit} fields={fields} />
-
       </NumberBox>
     </>
   );

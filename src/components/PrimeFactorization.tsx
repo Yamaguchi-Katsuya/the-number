@@ -9,9 +9,7 @@ export default function PrimeFactorization(): JSX.Element {
   const [result, setResult] = useState('');
   const [error, setError] = useState('');
 
-  const fields: Field[] = [
-    { name: 'factorization-number' },
-  ];
+  const fields: Field[] = [{ name: 'factorization-number' }];
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -30,11 +28,9 @@ export default function PrimeFactorization(): JSX.Element {
   return (
     <>
       <NumberBox title="素因数分解" result={result} error={error}>
-
         <NumberDescription text="数値を素因数分解します" keyword="素因数分解" />
 
         <NumberForm handleSubmit={handleSubmit} fields={fields} />
-
       </NumberBox>
     </>
   );
